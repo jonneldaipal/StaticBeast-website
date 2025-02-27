@@ -1,0 +1,807 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(to right, #000, #111);
+    color: #d4af37;
+    background-image: url('FreeVector.png');
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    background-position: center;  
+    background-attachment: fixed;  
+}
+
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 40px;
+    box-shadow: 0 4px 6px rgba(255, 215, 0, 0.3);
+    z-index: 1000;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 12px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #d4af37;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #d4af37;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Navigation */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; 
+    }
+
+    .nav-links {
+        display: none; 
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(255, 215, 0, 0.3);
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+  /*  margin: 20px 0;
+    border-radius: 10px; */
+    margin-bottom: 0;
+}
+
+
+/* ****************************** HERO SECTION ****************************** */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px; 
+}
+
+    
+
+
+/* Hero Content (Logo & Title Side-by-Side) */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Logo Styling */
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Title Styling */
+.hero-text {
+    text-align: left;
+}
+
+.brand-name {
+    font-size: 55px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: #e6c300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Subtitle */
+.hero-description1 {
+    font-size: 22px;
+    color: #fff;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Main Paragraph */
+.hero-description {
+    font-size: 20px;
+    color: #fff;
+    max-width: 800px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #d4af37;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+    margin-top: 20px;
+}
+
+/* Hover Effect */
+.btn:hover {
+    background-color: #b8860b;
+    color: #fff;
+    transform: scale(1.08);
+}
+
+/* Button Animation */
+.btn:active {
+    transform: scale(0.92);
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-icons a {
+    font-size: 26px;
+    color: #d4af37;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.social-icons a:hover {
+    color: #fff;
+    transform: scale(1.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand-name {
+        font-size: 45px;
+    }
+
+    .hero-description1 {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
+
+
+
+/* ****************************** SUPPORT SERVICES SECTION ****************************** */
+.services {
+    text-align: center;
+    color: #ffd700;
+    padding: 40px 15px;
+    min-height: auto;
+    overflow: visible;
+}
+
+/* Subheading */
+.subheading {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+/* Main Heading */
+.services h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #6e6d66;
+}
+
+.services h2 span {
+    font-weight: bold;
+    color: #6e6d66;
+}
+
+/* Desktop: Pyramid Layout */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+/* Pyramid Layout */
+.services-container .service:nth-child(1) {
+    grid-column: 2 / span 2;
+}
+
+.services-container .service:nth-child(2) {
+    grid-column: 2 / span 1;
+}
+
+.services-container .service:nth-child(3) {
+    grid-column: 3 / span 1;
+}
+
+.services-container .service:nth-child(4) {
+    grid-column: 1 / span 1;
+}
+
+.services-container .service:nth-child(5) {
+    grid-column: 2 / span 1;
+}
+
+.services-container .service:nth-child(6) {
+    grid-column: 3 / span 1;
+}
+
+.services-container .service:nth-child(7) {
+    grid-column: 4 / span 1;
+}
+
+/* Service Box Styling */
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 215, 0, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 220px;
+    height: 180px;
+    margin: auto;
+}
+
+/* Hover Effects (Retained) */
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Icon Styling */
+.service i {
+    font-size: 60px;
+    color: #ffd700;
+}
+
+/* Mobile: Stack Services in One Column */
+@media (max-width: 768px) {
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+/* Tablet: Two Columns */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+/* ****************************** CALL TO ACTION BUTTON ****************************** */
+.cta-button {
+    background: #ffd700;
+    color: #333;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #e6c200;
+}
+
+/* Secondary CTA Button */
+.cta-button {
+    background: #d4af37;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+/* Hover Effect */
+.cta-button:hover {
+    background: #b8860b;
+    color: #fff;
+}
+
+/* ****************************** AFFILIATE SECTION ****************************** */
+.affiliate {
+    text-align: center;
+    font-size: 20px;
+    padding: 60px 20px;
+    color: #ffd700;
+}
+
+/* Affiliate Button */
+.affiliate-btn-container {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.affiliate-btn {
+    background-color: #d4af37;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+}
+
+.affiliate-btn:hover {
+    background-color: #b8860b;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* ****************************** MOBILE FIXES ****************************** */
+@media (max-width: 768px) {
+    .affiliate {
+        font-size: 18px;
+        padding: 40px 15px;
+    }
+
+    .affiliate-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: auto;
+    }
+
+    .cta-button {
+        width: auto;
+        text-align: center;
+    }
+}
+
+
+
+/* ****************************** PARTNERS SECTION ****************************** */
+/* Center the whole section */
+.affiliate {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Section Title */
+.affiliate h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffd700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Main Partner - Horizontal Layout (for Large Screens) */
+.main-partner {
+    display: flex;
+    flex-direction: row; /* Keep items in a row */
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Increased gap between partners */
+    padding: 30px;
+    flex-wrap: wrap; /* Allows wrapping if screen is too small */
+}
+
+/* Partner Items */
+/* Ensure uniform size for main partners */
+.main-partner a {
+    width: 250px; /* Keep consistent width */
+    height: 280px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure even spacing */
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover Effect (Preserved) */
+.main-partner a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(255, 215, 0, 0.6); /* Slightly stronger glow */
+}
+
+/* Adjust image size */
+.main-partner img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Ensure text is centered */
+.main-partner p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd700;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Partners Grid */
+.partners-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Rows */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+/* Partner Box */
+.partner-box {
+    width: 200px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.4);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.partner-box:hover {
+    transform: scale(1.05);
+}
+
+/* Partner Logo */
+.partner-box img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Partner Name */
+.partner-box p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+
+
+/* ****************************** TESTIMONIALS SECTION ****************************** */
+.testimonials {
+    text-align: center;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+/* Heading */
+.testimonials-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ffd700; 
+}
+
+/* Testimonials Container */
+.testimonials-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Testimonial Box */
+.testimonial {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Star Ratings */
+.stars {
+    color: #d4af37;
+    font-size: 18px;
+}
+
+/* Hover Effect */
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.video-container {
+    width: 100%;
+    height: 250px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Responsive Fixes */
+@media (max-width: 1024px) {
+    .testimonials-container {
+        flex-wrap: wrap;
+    }
+    .testimonial {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+/* ****************************** FOOTER SECTION ****************************** */
+footer {
+    background: linear-gradient(to right, #000, #111);
+    color: #d4af37;
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 100vw;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 5px;
+}
+
+/* Footer Contact (Logo + Info aligned) */
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+/* Footer Logo */
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.footer-logo:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Contact Info */
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-contact-info h4 {
+    font-size: 16px;
+    color: #d4af37;
+    margin-bottom: 5px;
+}
+
+.footer-contact-info p,
+.footer-contact-info a {
+    font-size: 14px;
+    color: #d4af37;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-contact-info a:hover {
+    color: #fff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 15px;
+    font-size: 12px;
+    border-top: 1px solid rgba(212, 175, 55, 0.5);
+    flex-wrap: wrap;
+}
+
+/* Social Media Icons */
+.social-links a {
+    color: #d4af37;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo-container {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+}

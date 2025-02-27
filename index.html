@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Beast</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <h1>Strategic Beast</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shopnow.html">Shop Now</a></li>
+            <li><a href="https://calendly.com/mario-vtmember/30min" target="_blank">Book Now</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- JavaScript for Mobile Menu -->
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</header>
+
+<!-- Main Sections -->
+<section class="hero">
+    <div class="hero-content">
+        <img src="Strategic.png" alt="Strategic Beast Logo" class="logo">
+        <div class="hero-text">
+            <h1 class="brand-name">Strategic Beast</h1>
+            <p class="hero-description1">Smart Strategies. Bold Growth. Unstoppable Success.</p>
+        </div>
+    </div>
+    
+    <p class="hero-description">
+        Your path to strategy, success, and growth. Embark on a journey to master strategic thinking and innovation.
+    </p>
+
+    <button class="btn" onclick="window.open('https://calendly.com/mario-vtmember/30min', '_blank')">Book Now</button>
+
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/strategic.beast" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@strategicbeast_1?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/@StrategicBeastAgency" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+</section>
+
+
+
+
+<!----------ABOUT US SECTION---------->
+<section class="services">
+    <h3 class="subheading">Support Services</h3>
+    <h2>A Team You <span>Can Trust</span></h2>
+    <div class="services-container">
+        <div class="service">
+            <i class="fas fa-bullhorn" style="font-size: 60px; color: #ffd700;"></i>
+            <p>Social Media Management & Marketing</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-laptop-code" style="font-size: 60px; color: #ffd700;"></i>
+            <p>Graphic & Web Design</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-cogs" style="font-size: 60px; color: #ffd700;"></i>
+            <p>GoHighLevel (GHL) Support</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-laptop-house" style="font-size: 60px; color: #ffd700;"></i>
+            <p>businesses Virtual Assistance</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-envelope-open-text" style="font-size: 60px; color: #ffd700;"></i>
+            <p>CRM Management & Automation Admin Support</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-chart-line" style="font-size: 60px; color: #ffd700;"></i>
+            <p>Sales & Lead Generation Admin Support</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-clipboard-list" style="font-size: 60px; color: #ffd700;"></i>
+            <p>Transaction Cordination</p>
+        </div>
+        
+    </div>
+    <button class="cta-button" onclick="location.href='services.html';">View More</button>
+    <br>
+    <br>
+    <div class="price-container"></div>
+    <p>Prices Start at $7</p>
+    
+</section>
+
+
+
+
+
+
+<!-- What to know more -->
+<section class="affiliate">
+    <h2>Want to know more <span>Strategic Beast?</span></h2>
+    
+    
+    <div class="affiliate-btn-container">
+        <button class="affiliate-btn" onclick="goToGallery()">Click here!</button>
+    </div>
+    
+    <script>
+    function goToGallery() {
+        window.location.href = "gallery.html"; // Change "gallery.html" to your actual gallery page URL
+    }
+    </script>
+    
+</section>
+
+
+
+
+<!-- Partner Brands -->
+<section class="affiliate"> 
+    <div class="banner">
+        <h2><span>Our Trusted Partners</span></h2>
+        <br>
+        
+        <!-- Main Partner at the Top -->
+        <div class="main-partner">
+            <a href="http://VTmembers.ca" target="_blank" style="text-decoration: none; color: inherit;">
+                <img src="Picture/vtamember.jpg" alt="">
+                <p>VTmembers</p>
+            </a>
+            <a href="https://www.cpmsnational.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                <img src="Picture/Adobe Express - file.png" alt="">
+                <p>Canadian Professional Management </p>
+            </a>
+        </div>
+        
+        <!-- Four Rows of Partners -->
+        <div class="partners-grid">
+            <div class="row">
+                <div class="partner-box">
+                    <a href="https://www.century21.com" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="Picture/Adobe Express - file.png" alt="">
+                        <p>Canadian Professional Management</p>
+                    </a>
+                </div>
+                <div class="partner-box">
+                    <a href="https://www.century21.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="Picture/civalgo.png" alt="">
+                        <p>Civalgo</p>
+                    </a>
+                </div>
+                <div class="partner-box">
+                    <a href="https://www.clover.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="Picture/Clover.png" alt="">
+                        <p>Clover</p>
+                    </a>
+                </div>
+                <div class="partner-box">
+                    <a href="https://www.coldwellbanker.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="Picture/coldwell banker.png" alt="">
+                        <p>Coldwell Banker</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="partner-box">
+                    <a href="https://www.exprealty.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="Picture/exp.png" alt="">
+                        <p>ExpRealty</p>
+                    </a>
+                </div>
+                <div class="partner-box">
+                    <a href="https://www.freedom55financial.com" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="Picture/freedom55.png" alt="">
+                        <p>freedom55financial</p>
+                    </a>
+                </div>
+                <div class="partner-box">
+                    <a href="https://www.ringcentral.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="Picture/RingCentral.png" alt="">
+                        <p>RingCentral</p>
+                    </a>
+                </div>
+                <div class="partner-box">
+                    <a href="https://www.telusdigital.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="Picture/Telus.png" alt="">
+                        <p>TelusDigital</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="partner-box">
+                    <a href="https://theacquisitiongroup.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="Picture/theacquistion.png" alt="">
+                        <p>The acquisition group</p>
+                    </a>
+                </div>
+                <div class="partner-box">
+                    <a href="https://vejiholdings.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <img src="Picture/vejii.png" alt="">
+                        <p>Vejii</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <h3 class="testimonials-heading">What Our Clients Say</h3>
+    <div class="testimonials-container">
+        <!-- Testimonial 1 - Video -->
+        <div class="testimonial">
+            <div class="testimonial-name">Mike</div>
+            <div class="stars">★★★★★</div>
+            <div class="video-container">
+                <video controls>
+                    <source src="Video/Testimonial_Mike.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial">
+            <div class="testimonial-name">Ciara</div>
+            <div class="stars">★★★★★</div>
+            <div class="video-container">
+                <video controls>
+                    <source src="Video/Testimonial_Ciara.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+            <div class="testimonial-name">Luke</div>
+            <div class="stars">★★★★★</div>
+            <div class="video-container">
+                <video controls>
+                    <source src="Video/Testimonial_Luke.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+            <div class="testimonial-name">Daniel</div>
+            <div class="stars">★★★★★</div>
+            <div class="video-container">
+                <video controls>
+                    <source src="Video/Testimonial_Daniel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+    
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-logo-container">
+            <img src="Strategic.png" alt="VTMember Logo" class="footer-logo">
+        </div>
+        <div class="footer-section footer-text">
+            <p>Strategic Beast supercharges businesses by sourcing, hiring, and managing highly skilled virtual team members that work remotely for a fraction of the labor cost.</p>
+        </div>
+
+        <!-- Contact Section (Logo + Info) -->
+        <div class="footer-contact">
+            <div class="footer-contact-info">
+                <h4>Reach Us</h4>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:admin@vtmember.ca">admin@vtmember.ca</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+16049005531">+1 (604) 900-5531</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>Strategic Beast © 2025. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/strategic.beast" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@strategicbeast_1?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@StrategicBeastAgency" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript to Ensure Footer Stays at Bottom -->
+<script>
+    function adjustFooter() {
+        const footer = document.getElementById("footer");
+        const body = document.body;
+        const html = document.documentElement;
+        const contentHeight = body.scrollHeight;
+        const windowHeight = window.innerHeight;
+
+        if (contentHeight < windowHeight) {
+            footer.style.position = "absolute";
+            footer.style.bottom = "0";
+            footer.style.width = "100%";
+        } else {
+            footer.style.position = "relative";
+        }
+    }
+
+    window.addEventListener("load", adjustFooter);
+    window.addEventListener("resize", adjustFooter);
+</script>
+
+<!-- Font Awesome (For Icons) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+</footer>
+</body>
+</html>

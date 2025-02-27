@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Beast</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <h1>Strategic Beast</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shopnow.html">Shop Now</a></li>
+            <li><a href="https://calendly.com/mario-vtmember/30min" target="_blank">Book Now</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- JavaScript for Mobile Menu -->
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+</header>
+
+
+
+<!-- About Us Section -->
+<section class="about"> 
+    <br>
+    <br>
+    <br>
+    <div class="about-container">
+        <h2>About Strategic Beast</h2>
+        <p>Strategic Beast is committed to driving success through smart strategies and bold growth. Our team of professionals brings innovative solutions to help businesses achieve unstoppable success.</p>
+    
+        <!-- Leadership Team -->
+        <h3>Meet Our Leadership</h3>
+        <div class="team-pyramid">
+            <!-- Row 1 - CEO -->
+            <div class="team-row row-1">
+                <div class="team-member">
+                    <img src="Picture/Mario.jpg" alt="CEO Image">
+                    <h4>Mario Martinez</h4>
+                    <p class="title">Owner | Chief Executive Officer | Founder</p>
+                </div>
+            </div>
+    
+            <div class="team-row row-1">
+                <div class="team-member">
+                    <img src="Picture/randy.jpg" alt="CEO Image">
+                    <h4>Randy Basatan</h4>
+                    <p class="title">Chief Operating Officer | VP of Operations</p>
+                </div>
+            </div>
+            
+    
+            <!-- Row 2 - Executives -->
+            <div class="team-row row-2">
+                <div class="team-member">
+                    <img src="Picture/greg.jpeg" alt="COO Image">
+                    <h4>Greg Navarra</h4>
+                    <p class="title">Marketing Head | Senior Manager</p>
+                </div>
+                <!-- Row 3 - Executives -->
+                <div class="team-member">
+                    <img src="" alt="CTO Image">
+                    <h4>Jonnel Daipal</h4>
+                    <p class="title">Head of Graphics & Web Development</p>
+                </div>
+            </div>
+    
+            <!-- Row 4 - Senior Managers -->
+            <div class="team-row row-3">
+                <div class="team-member">
+                    <img src="cmo.jpg" alt="CMO Image">
+                    <h4>Jonnel Daipal</h4>
+                    <p class="title">Head of Graphics & Web Development</p>
+                </div>
+             <!-- Row 5 - Officers -->
+                <div class="team-member">
+                    <img src="cmo.jpg" alt="CMO Image">
+                    <h4> </h4>
+                    <p>Marketing Officer</p>
+                </div>
+           <!-- Row 6 - Executives -->
+                <div class="team-member">
+                    <img src="finance.jpg" alt="Finance Image">
+                    <h4></h4>
+                    <p>Finance Manager</p>
+                </div>
+            </div>
+    
+            
+        </div>
+    </div>
+    </section>
+
+
+    
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-logo-container">
+            <img src="Strategic.png" alt="VTMember Logo" class="footer-logo">
+        </div>
+        <div class="footer-section footer-text">
+            <p>Strategic Beast supercharges businesses by sourcing, hiring, and managing highly skilled virtual team members that work remotely for a fraction of the labor cost.</p>
+        </div>
+
+        <!-- Contact Section (Logo + Info) -->
+        <div class="footer-contact">
+            <div class="footer-contact-info">
+                <h4>Reach Us</h4>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:admin@vtmember.ca">admin@vtmember.ca</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+16049005531">+1 (604) 900-5531</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>Strategic Beast © 2025. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/strategic.beast" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@strategicbeast_1?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@StrategicBeastAgency" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript to Ensure Footer Stays at Bottom -->
+<script>
+    function adjustFooter() {
+        const footer = document.getElementById("footer");
+        const body = document.body;
+        const html = document.documentElement;
+        const contentHeight = body.scrollHeight;
+        const windowHeight = window.innerHeight;
+
+        if (contentHeight < windowHeight) {
+            footer.style.position = "absolute";
+            footer.style.bottom = "0";
+            footer.style.width = "100%";
+        } else {
+            footer.style.position = "relative";
+        }
+    }
+
+    window.addEventListener("load", adjustFooter);
+    window.addEventListener("resize", adjustFooter);
+</script>
+
+<!-- Font Awesome (For Icons) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+</footer>
+</body>
+</html>
+
+

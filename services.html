@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Beast</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <nav>
+        <h1>Strategic Beast</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shopnow.html">Shop Now</a></li>
+            <li><a href="https://calendly.com/mario-vtmember/30min" target="_blank">Book Now</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- JavaScript for Mobile Menu -->
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+</header>
+
+
+
+<!-- About Us Section -->
+<section class="about"> 
+    <br>
+    <br>
+    <br>
+        <!-- Leadership Team -->
+        <h2>Services We Offer</h2>
+    <br>
+    <br>
+        <div class="team-pyramid">
+            <!-- Row 1  -->
+            <div class="team-row row-1">
+                <div class="team-member">
+                    <h1> Social Media Management & Marketing</h1>
+                    <ul>
+                        <li>Content Creation & Scheduling</li>
+                        <li>Engagement & Community Management</li>
+                        <li>Social Media Advertising</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+            </div>
+            <!-- Row 4  -->
+            <div class="team-row row-3">
+                <div class="team-member">
+                        <h1> Graphic & Web Design</h1>
+                        <ul>
+                            <li>Branding & logo Design</li>
+                            <li>Website Development & Maintenance</li>
+                            <li>Marketing Collateral Design</li>
+                            <li> UI/UX Design</li>
+                        </ul>
+                </div>
+             <!-- Row 5 -->
+                <div class="team-member">
+                    <h1> GoHighLevel (GHL) Support</h1>
+                    <ul>
+                        <li>Funnel Building & Landing Pages</li>
+                        <li>Automated Workflows & Campaigns</li>
+                        <li>Pipeline Management</li>
+                        <li>Email & SMS Marketing</li>
+                    </ul>
+                </div>
+           <!-- Row 6  -->
+                <div class="team-member">
+                    <h1> Business Virtual Assistance</h1>
+                        <ul>
+                            <li>Administrative Support</li>
+                            <li>Email & Calendar Management</li>
+                            <li>Data Entry & Organization</li>
+                            <li>Travel & Expense Management</li>
+                        </ul>
+                </div>
+            </div>
+             <!-- Row 4  -->
+             <div class="team-row row-3">
+                <div class="team-member">
+                    <h1> Sales & Lead Generation Admin Support</h1>
+                    <ul>
+                        <li>Email & Calendar Management</li>
+                        <li>Data Entry & Organization</li>
+                        <li>Travel & Expenses Management</li>
+                    </ul>
+                </div>
+             <!-- Row 5  -->
+                <div class="team-member">
+                    <h1>CRM Management & Automation Admin Support</h1>
+                    <ul>
+                        <li>CRM Setup & Maintenance</li>
+                        <li>Contact & Lead Management</li>
+                        <li>Workflow & Automation Setup</li>
+                        <li>GoHighLevel (GHL) Expertise</li>
+                    </ul>
+                </div>
+           <!-- Row 6 -->
+                <div class="team-member">
+                    <h1>Transaction Coordination</h1>
+                    <ul>
+                        <li>Contract & Document Management</li>
+                        <li>Scheduling & Client</li>
+                        <li>Communication Compliance & Deadline Tracking</li>
+                    </ul>
+                </div>
+            </div>    
+    
+            
+        </div>
+    </div>
+    </section>
+
+
+    
+<!-- Footer -->
+<footer id="footer">
+    <div class="footer-container">
+        <!-- Company Info -->
+        <div class="footer-logo-container">
+            <img src="Strategic.png" alt="VTMember Logo" class="footer-logo">
+        </div>
+        <div class="footer-section footer-text">
+            <p>Strategic Beast supercharges businesses by sourcing, hiring, and managing highly skilled virtual team members that work remotely for a fraction of the labor cost.</p>
+        </div>
+
+        <!-- Contact Section (Logo + Info) -->
+        <div class="footer-contact">
+            <div class="footer-contact-info">
+                <h4>Reach Us</h4>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:admin@vtmember.ca">admin@vtmember.ca</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+16049005531">+1 (604) 900-5531</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>Strategic Beast © 2025. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/strategic.beast" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@strategicbeast_1?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@StrategicBeastAgency" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript to Ensure Footer Stays at Bottom -->
+<script>
+    function adjustFooter() {
+        const footer = document.getElementById("footer");
+        const body = document.body;
+        const html = document.documentElement;
+        const contentHeight = body.scrollHeight;
+        const windowHeight = window.innerHeight;
+
+        if (contentHeight < windowHeight) {
+            footer.style.position = "absolute";
+            footer.style.bottom = "0";
+            footer.style.width = "100%";
+        } else {
+            footer.style.position = "relative";
+        }
+    }
+
+    window.addEventListener("load", adjustFooter);
+    window.addEventListener("resize", adjustFooter);
+</script>
+
+<!-- Font Awesome (For Icons) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+</footer>
+</body>
+</html>
+
+
